@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Problem Stroke</title>
+<script>
+	window.onload=function()
+	{
+		var myCanvas=document.getElementById("myCanvas");
+		var ctx=myCanvas.getContext("2d");
+		ctx.fillStyle="white";
+		ctx.fillRect(50,50,500,500);
+		
+		//Border 
+		ctx.strokeStyle="rgba(240, 174, 0, 1.0)";
+		ctx.lineWidth=10;
+		ctx.strokeRect(50,50,500,500);
+		
+		//FirstBox
+		ctx.fillStyle="rgba(240, 174, 0, 0.5)";
+		ctx.fillRect(56,55,100,235);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(56,55);
+		ctx.lineTo(70,70);
+		ctx.lineTo(138,70);
+		ctx.lineTo(153,55);
+		ctx.moveTo(70,70);
+		ctx.lineTo(70,275);
+		ctx.lineTo(56,290);
+		ctx.moveTo(70,275);
+		ctx.lineTo(138,275);
+		ctx.lineTo(155,290);
+		ctx.moveTo(138,275);
+		ctx.lineTo(138,70);
+		ctx.moveTo(156,290);
+		ctx.lineTo(56,290);
+		ctx.stroke();
+	
+		
+		ctx.fillStyle="black";
+		ctx.fillRect(55,290,100,15);
+		
+		ctx.fillStyle="rgba(240, 174, 0, 0.5)";
+		ctx.fillRect(56,305,100,240);
+		
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(55,55,100,490);
+		
+		ctx.lineWidth=1;
+		ctx.strokeStyle="black";
+		ctx.strokeRect(71,322,67,205);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(55,305);
+		ctx.lineTo(71,322);
+		ctx.moveTo(55,545);
+		ctx.lineTo(71,526);
+		ctx.moveTo(138,526);
+		ctx.lineTo(155,545);
+		ctx.moveTo(138,322);
+		ctx.lineTo(152,305);
+		ctx.lineTo(55,305);
+		ctx.stroke();
+		
+		//SecondBox
+		ctx.fillStyle="rgba(240, 174, 0, 0.5)";
+		ctx.fillRect(157,55,280,120);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(156,55,280,120);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.strokeRect(171,70,250,90);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(157,55);
+		ctx.lineTo(171,70);
+		ctx.moveTo(421,70);
+		ctx.lineTo(436,55);
+		ctx.moveTo(171,160);
+		ctx.lineTo(156,175);
+		ctx.moveTo(421,160);
+		ctx.lineTo(437,175);
+		ctx.stroke();
+		
+		//ThirdBox
+		ctx.fillStyle="rgba(240, 174, 0, 0.5)";
+		ctx.fillRect(157,175,280,120);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(156,175,280,120);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.strokeRect(171,190,250,90);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(157,175);
+		ctx.lineTo(171,190);
+		ctx.moveTo(421,190);
+		ctx.lineTo(436,175);
+		ctx.moveTo(171,280);
+		ctx.lineTo(156,295);
+		ctx.moveTo(421,280);
+		ctx.lineTo(437,295);		
+		ctx.stroke();
+		
+		//FourthBox
+		ctx.fillStyle="rgba(240, 174, 0, 0.5)";
+		ctx.fillRect(437,55,110,330);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(436,55,110,330);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.strokeRect(450,70,83,300);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(437,55);
+		ctx.lineTo(450,70);
+		ctx.moveTo(533,70);
+		ctx.lineTo(547,55);
+		ctx.moveTo(437,385);
+		ctx.lineTo(450,370);
+		ctx.moveTo(533,370);
+		ctx.lineTo(547,385);
+		ctx.stroke();
+		
+		//FifthBox
+		ctx.fillStyle="rgba(240, 174, 0, 0.5)";
+		ctx.fillRect(437,385,110,160);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(436,385,110,160);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.strokeRect(450,400,81,132);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(437,385);
+		ctx.lineTo(450,400);
+		ctx.moveTo(531,400);
+		ctx.lineTo(547,385);
+		ctx.moveTo(437,545);
+		ctx.lineTo(450,532);
+		ctx.moveTo(531,532);
+		ctx.lineTo(547,545);
+		ctx.stroke();
+		
+		//SixthBox--Drawer1
+		ctx.fillStyle="rgba(240, 174, 0, 0.8)";
+		ctx.fillRect(159,299,137,116);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(155,295,145,125);
+		
+		//SeventhBox--Drawer2
+		ctx.fillStyle="rgba(240, 174, 0, 0.8)";
+		ctx.fillRect(304,299,127,116);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(300,295,135,125);
+		
+		//EigthBox--Drawer3
+		ctx.fillStyle="rgba(240, 174, 0, 0.8)";
+		ctx.fillRect(159,425,137,116);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(155,420,145,125);
+		
+		//NingthBox--Drawer4
+		ctx.fillStyle="rgba(240, 174, 0, 0.8)";
+		ctx.fillRect(305,425,126,116);
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=5;
+		ctx.strokeRect(300,420,135,125);
+		
+		//SixthBox--Arc1
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(160,299);
+		ctx.lineTo(296,299);
+		ctx.lineTo(296,415);
+		ctx.lineTo(160,415);
+		ctx.closePath();
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(180,299);
+		ctx.lineTo(180,315);
+		ctx.lineTo(279,315);
+		ctx.lineTo(279,299);
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.fillStyle="red";
+		ctx.fillRect(220,320,20,20);
+		ctx.fillStyle="rgba(247, 190, 154, 0.9)";
+		ctx.fill();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.arc(230,330,5,0,Math.PI * 2,false);
+		//ctx.fillStyle="black";
+		//ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+		
+		//SeventhBox--Arc2
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(304,299);
+		ctx.lineTo(431,299);
+		ctx.lineTo(431,415);
+		ctx.lineTo(304,415);
+		ctx.closePath();
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(324,299);
+		ctx.lineTo(324,315);
+		ctx.lineTo(411,315);
+		ctx.lineTo(411,300);
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.fillStyle="red";
+		ctx.fillRect(358,320,20,20);
+		ctx.fillStyle="rgba(247, 190, 154, 0.9)";
+		ctx.fill();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.arc(368,330,5,0,Math.PI * 2,false);
+		//ctx.fillStyle="black";
+		//ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+
+		
+		//EigthBox--Arc3
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(159,425);
+		ctx.lineTo(296,425);
+		ctx.lineTo(296,541);
+		ctx.lineTo(159,541);
+		ctx.closePath();
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(179,425);
+		ctx.lineTo(179,443);
+		ctx.lineTo(276,443);
+		ctx.lineTo(276,425);
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.fillStyle="red";
+		ctx.fillRect(218,448,20,20);
+		ctx.fillStyle="rgba(247, 190, 154, 0.9)";
+		ctx.fill();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.arc(229,458,5,0,Math.PI * 2,false);
+		//ctx.fillStyle="black";
+		//ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+		//NingthBox--Arc4
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(305,425);
+		ctx.lineTo(431,425);
+		ctx.lineTo(431,541);
+		ctx.lineTo(305,541);
+		ctx.closePath();
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.moveTo(325,425);
+		ctx.lineTo(325,443);
+		ctx.lineTo(411,443);
+		ctx.lineTo(411,426);
+		ctx.stroke();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.fillStyle="red";
+		ctx.fillRect(358,448,20,20);
+		ctx.fillStyle="rgba(247, 190, 154, 0.9)";
+		ctx.fill();
+		
+		ctx.strokeStyle="black";
+		ctx.lineWidth=1;
+		ctx.beginPath();
+		ctx.arc(368,458,5,0,Math.PI * 2,false);
+		//ctx.fillStyle="black";
+		//ctx.fill();
+		ctx.closePath();
+		ctx.stroke();
+		
+		
+	};
+</script>
+<style>
+	h1{
+		color:red;
+	}
+</style>
+</head>
+<body>
+<center><h1>Problem Statement</h1></center><hr>
+<center>
+	<canvas id="myCanvas" width=600 height=600>
+		Go to Live demo....
+	</canvas>
+	</center>
+</body>
+</html>
