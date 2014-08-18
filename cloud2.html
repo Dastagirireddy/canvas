@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud 2</title>
+	<style>
+	
+canvas
+{
+background-image:url('http://bioarchitect.org/images/58616-download-jpg-file-light-wood-texture.jpg');
+}
+</style>
+	<script>
+		window.onload=function()
+		{
+			var myCanvas2=document.getElementById("myCanvas2");
+			var c=myCanvas2.getContext("2d");
+		
+			var img1 = document.getElementById("img1");
+			c.drawImage(img1,0,0,700,30);
+
+			var img2=document.getElementById("img2");
+			c.drawImage(img2,0,480,700,30);	
+			
+			c.fillStyle="black";
+			c.fillRect(0,30,700,3);
+			
+			c.strokeStyle="black";
+			c.lineWidth=1;
+			c.beginPath();
+			c.moveTo(100,30);
+			c.lineTo(100,320);
+			c.moveTo(200,30);
+			c.lineTo(200,480);
+			c.moveTo(300,30);
+			c.lineTo(300,480);
+			c.moveTo(400,30);
+			c.lineTo(400,480);
+			c.moveTo(500,30);
+			c.lineTo(500,480);
+			c.moveTo(600,30);
+			c.lineTo(600,320);
+			c.moveTo(0,321);
+			c.lineTo(200,321);
+			c.moveTo(0,374);
+			c.lineTo(200,374);
+			c.moveTo(0,427);
+			c.lineTo(200,427);
+			c.moveTo(0,479);
+			c.lineTo(200,479);
+			c.moveTo(200,386);
+			c.lineTo(300,386);
+			c.moveTo(200,427);
+			c.lineTo(300,427);
+			c.moveTo(200,479);
+			c.lineTo(300,479);
+			c.moveTo(300,427);
+			c.lineTo(400,427);
+			c.moveTo(300,479);
+			c.lineTo(400,479);
+			c.moveTo(400,386);
+			c.lineTo(500,386);
+			c.moveTo(400,427);
+			c.lineTo(500,427);
+			c.moveTo(400,479);
+			c.lineTo(500,479);
+			c.moveTo(500,321);
+			c.lineTo(700,321);
+			c.moveTo(500,374);
+			c.lineTo(700,374);
+			c.moveTo(500,427);
+			c.lineTo(700,427);
+			c.moveTo(500,479);
+			c.lineTo(700,479);
+			c.stroke();
+			
+			
+			c.strokeRect(90,220,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(90,220,5,50);
+			
+			c.strokeRect(105,230,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(105,230,5,50);
+			
+			c.strokeRect(290,220,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(290,220,5,50);
+			
+			c.strokeRect(305,220,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(305,220,5,50);
+			
+			c.strokeRect(490,220,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(490,220,5,50);
+			
+			c.strokeRect(590,220,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(590,220,5,50);
+			
+			c.strokeRect(605,230,5,50);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(605,230,5,50);
+			
+			c.strokeRect(75,344,50,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(75,344,50,5);
+			
+			c.strokeRect(75,400,50,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(75,400,50,5);
+			
+			c.strokeRect(75,454,50,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(75,454,50,5);
+			
+			c.strokeRect(235,405,30,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(235,405,30,5);
+			
+			c.strokeRect(235,450,30,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(235,450,30,5);
+			
+			c.strokeRect(335,450,30,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(335,450,30,5);
+			
+			c.strokeRect(435,405,30,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(435,405,30,5);
+			
+			c.strokeRect(435,450,30,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(435,450,30,5);
+			
+			c.strokeRect(575,344,50,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(575,344,50,5);
+			
+			c.strokeRect(575,400,50,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(575,400,50,5);
+			
+			c.strokeRect(575,454,50,5);
+			c.fillStyle="rgba(192,192,192,0.5)";
+			c.fillRect(575,454,50,5);
+		};
+	</script>
+</head>
+<body>
+<img id="img1" src="http://bgfons.com/upload/wood_texture3823.jpg" width="0" height="0"/>
+<img id="img2" src="http://cdn.tripwiremagazine.com/wp-content/uploads/2011/09/image423.png" width="0" height="0"/>
+<center>
+	
+	<canvas id="myCanvas2" width=700 height=500>
+		Go to live demo,..!!!
+	</canvas>
+</center>
+</body>
+</html>
